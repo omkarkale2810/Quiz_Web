@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@1,300&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  body {
+    background: #ffffff;
+    color: #ddf192;
+    font-family: 'Raleway';
+  }
+  nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0px;
+      height: 80px;
+      background:transparent;
+  }
+  nav ul{
+      display: flex;
+      justify-content: center;
+  }
+  nav ul li{
+      list-style: none;
+      margin: 0 24px;
+      font-weight: bold;
+  }
+  nav ul li a{
+      text-decoration: none;
+      margin: 0 24px;
+      color: #ffffff;
+  }
+  nav ul li a:hover{
+      color: #e1ff00;
+      font-size: 20px;
+      text-shadow: 0 0 20px rgb(238, 255, 0);}
+
+.leftnav{
+    font-weight: bold;
+    font-size: 45px;
+}
+.logo {
+    font-size: 35px;
+    font-weight: bolder;
+    position: relative;
+    animation: logoAnimation 1s infinite;
+  }
+  
+  @keyframes logoAnimation {
+    0%, 100% {
+      transform: scale(1);
+      text-shadow: none;
+    }
+    50% {
+      transform: scale(1.1);
+      text-shadow: 0 0 20px rgb(238, 255, 0);
+    }
+  }
+.main{
+    min-height: 100vh; 
+    background: url(bg.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.homepg{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+.homepgcontent{
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.homepgcontent h1{
+    opacity: 0; 
+    animation: fadeIn 2s ease forwards; 
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  }
+  .homepgcontent h1{
+    font-size: 80px;
+    font-weight: bold;
+    color: rgb(80, 227, 100);
+    text-shadow: 0 0 20px rgb(0, 140, 255);
+  
+}
+
+.homepgcontent p{
+    display: flex;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 .2px blue;
+}
+
+.startbtn {
+    background-color:rgb(230, 241, 100) ;
+    color: rgb(85, 123, 247);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 11px;
+    font-size: 16px;
+    cursor: pointer;
+    animation: pulse 3s infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .startbtn:hover {
+    background-color: aliceblue;
+  }
