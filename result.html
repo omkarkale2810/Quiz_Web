@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+  </head>
+  <body>
+    <div id="result">
+      <span id="c"></span>
+      <span id="w"></span>
+      <span id="na"></span>
+      <span id="tl"></span>
+    </div>
+  </body>
+  <script>
+    var url_string = window.location;
+    var url = new URL(url_string);
+    var c = url.searchParams.get("c");
+    var w = url.searchParams.get("w");
+    var na = url.searchParams.get("na");
+    var tl = url.searchParams.get("tl");
+    document.getElementById("c").innerText = "Corect: " + c;
+    document.getElementById("w").innerText = "Wrong: " + w;
+    document.getElementById("na").innerText = "Not Answered: " + na;
+    document.getElementById("tl").innerText = "Time Left: " + tl;
+  </script>
+</html>

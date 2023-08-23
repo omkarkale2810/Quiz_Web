@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:ital,wght@1,300&display=swap");
+
+
+
 body {
     margin: 0;
     display: flex;
@@ -5,7 +9,8 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+    font-family: Raleway; 
+   
   }
   
   .quiz-container {
@@ -14,6 +19,7 @@ body {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    filter: none;
   }
   
   .question {
@@ -25,13 +31,36 @@ body {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    background-color: #f0f0f0;
+    background-color: #7fbaf6;
     border: 1px solid #ccc;
     cursor: pointer;
     transition: background-color 0.2s;
   }
   
   .option:hover {
-    background-color: #ddd;
+    background-color: #001aff;
   }
-  
+  body {
+   
+    background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    
+  }
+
+
+
+.elfsight-app-278877e5-c05f-458d-b144-6b66b7d06b24{
+display: flex;
+justify-content: top;
+width: 10%;
+
+
+
+
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+  height: 80px;
+  background:transparent;}
